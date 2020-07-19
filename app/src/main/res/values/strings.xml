@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ColorGame</string>
+    <string name="btnGreen">Verde</string>
+    <string name="btnRed">Vermelho</string>
+    <string name="btnBlue">Azul</string>
+    <string name="btnYellow">Amarelo</string>
+    <string name="score">0</string>
+    <string name="color">Cor</string>
 </resources>
