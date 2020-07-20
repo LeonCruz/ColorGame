@@ -22,6 +22,10 @@ class HomeFragment : Fragment() {
         binding.btnPlay.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_homeFragment_to_gameFragment)
         }
+
+        binding.btnRules.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_homeFragment_to_rulesFragment)
+        }
         return return binding.root
     }
 }

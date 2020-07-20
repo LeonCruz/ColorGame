@@ -9,6 +9,7 @@
     <string name="play">Jogar</string>
     <string name="rules">Regras</string>
     <string name="gameName">Color Game</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rule1">1: Escolha a cor que está escrita, e não a cor do texto</string>
+    <string name="rule2">2: É preciso escolher antes de tempo acabar, se não o jogo acaba</string>
+    <string name="rule3">3: Caso escolha a cor errada, o jogo acaba</string>
 </resources>
