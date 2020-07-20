@@ -1,6 +1,5 @@
 package br.com.leon.colorgame
 
-import android.database.DatabaseUtils
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import br.com.leon.colorgame.databinding.FragmentHomeBinding
-import kotlinx.android.synthetic.main.fragment_home.*
+
 
 class HomeFragment : Fragment() {
     override fun onCreateView(
