@@ -29,13 +29,15 @@ class GameFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = DataBindingUtil.inflate<FragmentGameBinding>(
+        binding = DataBindingUtil.inflate<FragmentGameBinding>(
             inflater, R.layout.fragment_game, container, false
         )
         binding.btnRed.setBackgroundColor(Color.RED)
         binding.btnBlue.setBackgroundColor(Color.BLUE)
         binding.btnGreen.setBackgroundColor(Color.GREEN)
         binding.btnYellow.setBackgroundColor(Color.YELLOW)
+
+        changeValues()
 
         binding.btnRed.setOnClickListener {
             if (Game.compareColors(txtColor.currentTextColor, btnRed.text.toString())) updateScore() else gameOver()
