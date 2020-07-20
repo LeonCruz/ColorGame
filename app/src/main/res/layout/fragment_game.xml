@@ -13,7 +13,7 @@
             android:id="@+id/btnGreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="120dp"
             android:text="@string/btnGreen"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -24,7 +24,7 @@
             android:id="@+id/btnRed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="120dp"
             android:text="@string/btnRed"
             app:layout_constraintEnd_toStartOf="@+id/btnGreen"
             app:layout_constraintHorizontal_chainStyle="spread"
@@ -71,12 +71,27 @@
             android:id="@+id/txtColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="96dp"
             android:text="@string/color"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/score" />
+
+        <ProgressBar
+            android:id="@+id/timer"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="158dp"
+            android:layout_height="107dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progess_shape"
+            app:layout_constraintBottom_toTopOf="@+id/txtColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.197" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
