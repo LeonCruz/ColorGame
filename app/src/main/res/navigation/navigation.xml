@@ -16,7 +16,8 @@
             app:enterAnim="@anim/enter_game_from_home" />
         <action
             android:id="@+id/action_homeFragment_to_rulesFragment"
-            app:destination="@id/rulesFragment" />
+            app:destination="@id/rulesFragment"
+            app:enterAnim="@anim/enter_rules" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -31,7 +32,16 @@
         android:id="@+id/rulesFragment"
         android:name="br.com.leon.colorgame.RulesFragment"
         android:label="fragment_rules"
-        tools:layout="@layout/fragment_rules" />
+        tools:layout="@layout/fragment_rules" >
+        <action
+            android:id="@+id/action_rulesFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/exit_rules" />
+        <action
+            android:id="@+id/action_rulesFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@anim/exit_rules" />
+    </fragment>
     <fragment
         android:id="@+id/gameOverFragment"
         android:name="br.com.leon.colorgame.GameOverFragment"
