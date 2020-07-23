@@ -40,5 +40,9 @@
             android:id="@+id/action_gameOverFragment_to_gameFragment"
             app:destination="@id/gameFragment"
             app:enterAnim="@anim/enter_game_from_end" />
+        <action
+            android:id="@+id/action_gameOverFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/enter_game_from_end" />
     </fragment>
 </navigation>

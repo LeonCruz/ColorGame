@@ -23,6 +23,10 @@ class GameOverFragment : Fragment() {
             view.findNavController().navigate(R.id.action_gameOverFragment_to_gameFragment)
         }
 
+        binding.backHome.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_gameOverFragment_to_homeFragment)
+        }
+
         return binding.root
     }
 }
