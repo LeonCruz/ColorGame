@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LiveData
+import androidx.navigation.findNavController
 import br.com.leon.colorgame.databinding.FragmentGameBinding
 import kotlinx.android.synthetic.main.fragment_game.*
 
@@ -102,7 +103,6 @@ class GameFragment : Fragment() {
             override fun onTick(p0: Long) {}
 
             override fun onFinish() {
-                Toast.makeText(context, "Acabou o tempo", Toast.LENGTH_LONG).show()
                 binding.timer.visibility = View.GONE
                 gameOver()
             }
@@ -114,6 +114,6 @@ class GameFragment : Fragment() {
         countDownTimer.cancel()
         binding.timer.visibility = View.GONE
         score.text = "0"
-        Toast.makeText(context, "Fim de jogo", Toast.LENGTH_LONG).show()
+        view?.findNavController()?.navigate(R.id.action_gameFragment_to_gameOverFragment)
     }
 }

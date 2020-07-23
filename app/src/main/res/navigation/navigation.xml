@@ -21,10 +21,22 @@
         android:id="@+id/gameFragment"
         android:name="br.com.leon.colorgame.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
     <fragment
         android:id="@+id/rulesFragment"
         android:name="br.com.leon.colorgame.RulesFragment"
         android:label="fragment_rules"
         tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="br.com.leon.colorgame.GameOverFragment"
+        android:label="GameOverFragment" >
+        <action
+            android:id="@+id/action_gameOverFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
 </navigation>
